@@ -35,12 +35,14 @@ select {
 
 /*End of CSS reset*/
 
+
+/*Color variables*/
+
 :root {
     --primary-color: #fff;
     --secondary-color: #000;
 }
 
-/* Header styles */
 
 body {
     height: 100vh;
