@@ -6,9 +6,9 @@ function loadEvent() {
             <nav id="navbar">
                 <h1>Acme Inc.</h1>
                 <ul>
-                    <li><a href="szolgaltatasok.html">Szolgáltatásaink</a></li>
-                    <li><a href="ceginformacio.html">Céginformáció</a></li>
-                    <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                    <li><a href="./szolgaltatasok.html">Szolgáltatásaink</a></li>
+                    <li><a href="./ceginformacio.html">Céginformáció</a></li>
+                    <li><a href="./kapcsolat.html">Kapcsolat</a></li>
                 </ul>
             </nav>
         </header>
