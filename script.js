@@ -4,7 +4,7 @@ function loadEvent() {
     document.body.insertAdjacentHTML("afterbegin", `
         <header>
             <nav id="navbar">
-                <h4>Acme Inc.</h4>
+                <h1>Acme Inc.</h1>
                 <ul>
                     <li><a href="szolgaltatasok.html">Szolgáltatásaink</a></li>
                     <li><a href="ceginformacio.html">Céginformáció</a></li>

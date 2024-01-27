@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+
+button,
+a {
+    cursor: pointer;
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+button,
+textarea,
+select {
+    appearance: none !important;
+    border-radius: 0;
+}
+
+/*End of CSS reset*/
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #000;
+}
+
+/* Header styles */
+
+body {
+    height: 100vh;
+    width: 100%;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+header {
+    border-bottom: solid 1px var(--secondary-color);
+    padding: 1em;
+}
+
+#hero {
+    background-size: cover;
+}
+
+#services {
+    padding: 2em;
+}
+
+#about {
+    padding: 2em;
+}
+
+#contact {
+    padding: 2em;
+}
+
+footer {
+    background-color: #d74be4;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/******** Responsive design *********/
+@media only screen and (max-width: 360px) {}
+
+@media only screen and (min-width: 1920px) {}
+
+/******** Dark mode *********/
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+    }
+
+}
