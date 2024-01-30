@@ -39,8 +39,10 @@ select {
 /*Color variables*/
 
 :root {
-    --primary-color: #fff;
-    --secondary-color: #000;
+    --light-primary: linear-gradient(117deg, #EEEEF0 0%, #CCCCD8 100%);
+    --light-secondary: #000000;
+    --dark-primary: linear-gradient(117deg, #121215 0%, #262629 100%);
+    --dark-secondary: #ffffff;
 }
 
 /***************************/
@@ -48,12 +50,13 @@ select {
 body {
     height: 100vh;
     width: 100%;
-    color: var(--secondary-color);
-    background: linear-gradient(117deg, #EEEEF0 0%, #CCCCD8 100%);
+    color: var(--light-secondary);
+    background: var(--light-primary);
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
-    border-bottom: solid 1px var(--secondary-color);
+    border-bottom: solid 1px var(--light-secondary);
     padding: 1em;
 }
 
@@ -100,7 +103,6 @@ nav ul {
 
 #about {
     height: auto;
-    padding-bottom: 300px;
 }
 
 #hero-ceginformacio {
@@ -108,8 +110,7 @@ nav ul {
     align-items: center;
     justify-content: space-around;
     height: 100vh;
-    color: #000000; 
-    background-color: #ffffff; 
+    color: var(--light-secondary);
 }
 
 .hero-content {
@@ -133,13 +134,13 @@ nav ul {
 
 .services-link {
     font-size: 1.2em; 
-    color: #ffffff; 
+    color: var(--light-secondary);
     text-decoration: underline;
 }
 
 .reviews-section {
     background: #333; 
-    color: #fff; 
+    color: var(--dark-secondary);
     padding: 50px 0;
 }
 
@@ -182,8 +183,8 @@ blockquote {
 }
 
 .introduction-section {
-    background-color: #ffffff; 
-    color: #000000; 
+    background: var(--light-primary); 
+    color: var(--light-secondary); 
     padding: 50px 0;
     text-align: justify;
 }
@@ -209,7 +210,6 @@ blockquote {
 
 #services {
     height: auto;
-    padding-bottom: 300px;
 }
 
 #services .container {
@@ -256,7 +256,6 @@ blockquote {
 
 #contact {
     height: auto;
-    padding-bottom: 300px;
 }
 
 .contact-info {
@@ -276,12 +275,10 @@ blockquote {
 }
 
 .contact-form {
-    width: 100%;
-    margin: 20px auto;
+    width: 100vw;
+    margin: 0;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    color:grey;
+    color: #888888;
     background-color: #000000;
 }
 
@@ -297,7 +294,7 @@ blockquote {
     border-radius: 4px;
     font-size: 18px;
     font-weight: 600;
-    color: #ffffff;
+    color: var(--dark-secondary);
 }
 
 .form-group input[type="text"],
@@ -308,7 +305,6 @@ blockquote {
     padding: 10px;
     border-bottom: 4px solid #A0009B;
     background-color: #888888;
-   
 }
 
 .form-group textarea {
@@ -325,14 +321,13 @@ button[type="submit"] {
     cursor: pointer;
     font-size: 16px;
     background: linear-gradient(to right, #7000A0, #A0009B);
-    color: #ffffff;
+    color: var(--dark-secondary);
 }
 
 /***************************/
 
 #footer-btm {
     display: flex;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -345,12 +340,11 @@ button[type="submit"] {
 }
 
 #footer-btm h2 {
-    font-family: 'Roboto', sans-serif;
     font-size: 120px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 200px; 
-    color: #ffffff;
+    color: var(--dark-secondary);
 }
 
 /******** Responsive design *********/
@@ -388,8 +382,8 @@ button[type="submit"] {
 
 @media (prefers-color-scheme: dark) {
     body {
-        color: var(--primary-color);
-        background: linear-gradient(117deg, #121215 0%, #262629 100%);
+        color: var(--dark-secondary);
+        background: var(--dark-primary);
     }
 
 }
