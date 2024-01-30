@@ -49,7 +49,7 @@ body {
     height: 100vh;
     width: 100%;
     color: var(--secondary-color);
-    background-color: var(--primary-color);
+    background: linear-gradient(117deg, #EEEEF0 0%, #CCCCD8 100%);
 }
 
 header {
@@ -315,7 +315,6 @@ blockquote {
 }
 
 @media (max-width: 768px) {
-     /* Stack on smaller screens */
     }
 }
 
@@ -324,7 +323,7 @@ blockquote {
 @media (prefers-color-scheme: dark) {
     body {
         color: var(--primary-color);
-        background-color: var(--secondary-color);
+        background: linear-gradient(117deg, #121215 0%, #262629 100%);
     }
 
 }
