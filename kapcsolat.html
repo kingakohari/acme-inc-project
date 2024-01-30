@@ -1,19 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js" defer></script>
-    <title>ACME Inc. - Kapcsolat</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <section id="contact">
-        <h2>Kapcsolat</h2>
-        
-    </section>    
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="script.js" defer></script>
+  <title>ACME Inc. - Kapcsolat</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section id="contact">
+    <main>
+      <section class="contact-info">
+        <h2><em></em>Kapcsolat</em></h2>
+
+        <div class="company-info">
+          <p><em><b>Alapítás éve:</b> 2000</em></p>
+          <p><em><b>Ágazat:</b> Technológia és szolgáltatások</em></p>
+
+          <p><em><b>Cégprofil:</b> Az ACME Inc. egy vezető technológiai és szolgáltató vállalat, amely innovatív
+              megoldásokat kínál
+              ügyfeleinek szerte a világon. Célunk, hogy a legmagasabb színvonalú termékeket és szolgáltatásokat
+              nyújtsuk, amelyek
+              segítik ügyfeleinket a hatékonyság növelésében és a versenyelőny megszerzésében.</em></p>
+
+          <p><em><b>Termékek és szolgáltatások:</b>
+              <ul>
+                <li>Szoftverfejlesztés és testreszabás</li>
+                <li>Adatkezelés és elemzés</li>
+                <li>Cloud alapú megoldások</li>
+                <li>Biztonsági rendszerek és tanácsadás</li>
+                <li>Ügyfélkapcsolat-kezelés (CRM) rendszerek</li>
+              </ul>
+            </em>
+          </p>
+          <p><em><b>Ügyfélközpontúság:</b> Az ACME Inc. kiemelkedően fontosnak tartja ügyfelei elégedettségét és
+              elégedettségüket.
+              Ügyfélorientált szemléletünkkel és a legjobb ügyfélszolgálati gyakorlatok alkalmazásával biztosítjuk, hogy
+              ügyfeleink mindig a legjobb szolgáltatásokat kapják tőlünk.</em></p>
+
+          <p><em><b>Kapcsolat:</b>
+              Weboldal: www.acmeinc.com
+              Telefon: +36 123 456 789
+              E-mail: info@acmeinc.com</em></p>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Név</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail cím</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefonszám</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label for="message">Üzenet</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Küldés</button>
+        </form>
+
+        <!-- Map Embed -->
+        <div class="map">
+          <iframe src="your-google-map-embed-link" width="600" height="450" style="border:0;" allowfullscreen=""
+            loading="lazy"></iframe>
+        </div>
+      </section>
+    </main>
+
+
+  </section>
+</body>
+
 </html>
