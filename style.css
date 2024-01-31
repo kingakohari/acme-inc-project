@@ -63,25 +63,50 @@ section {
     background: var(--light-primary);
 }
 
-nav:not(.navbar) ul {
+.subpage nav {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    border-bottom: 1px solid var(--light-secondary); 
+}
+
+.subpage nav h1 {
+    margin: 20px; 
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.subpage nav h1 span {
+    text-transform: uppercase;
+}
+
+.subpage nav ul {
+    display: flex;
     list-style: none;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.subpage nav ul li:first-child {
+    margin-left: auto;
 }
    
-nav:not(.navbar) ul li a {
-    text-decoration: none;
-    padding: 0.5em;
+.subpage nav ul li a {
+    margin-right: 40px;
+    padding: 2px 4px; 
+    text-decoration: none; 
+    font-size: 25px; 
+    color: var(--light-secondary); 
 }
   
-nav:not(.navbar) ul li a:hover {
+.subpage nav ul li a:hover {
     background-color: #d4cdd6; 
     border-radius: 5px;
 }
 
-nav:not(.navbar) ul li a:active {
-    font-weight: 600; 
+.subpage nav ul li a.active {
+    font-weight: 700;
 }
 
 
@@ -134,7 +159,7 @@ nav:not(.navbar) ul li a:active {
 
 #hero .navbar ul li a.active,
 #hero .navbar ul li a:hover {
-    color: var(--light-secondary); 
+    font-weight: 400;
 }
 
 #hero footer {
@@ -464,6 +489,20 @@ button[type="submit"] {
 }
 
 @media screen and (max-width: 768px) {
+    .subpage nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .subpage nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subpage nav ul li {
+        margin: 0.5em 0; 
+    }
+
     .hero-content {
         flex-direction: column;
         text-align: center;
