@@ -317,6 +317,7 @@ blockquote {
 
 .form-row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -359,7 +360,7 @@ blockquote {
 }
 
 button[type="submit"] {
-    width: 10%;
+    width: 140px;
     height: 38px;
     margin-left: 90%; 
     margin-top: 30px;
@@ -396,17 +397,26 @@ button[type="submit"] {
 }
 
 /******** Responsive design *********/
-@media only screen and (max-width: 360px) {}
+@media screen and (max-width: 360px) {}
 
-@media only screen and (min-width: 1920px) {}
+@media screen and (min-width: 1920px) {}
 
-@media (max-width: 992px) {
+@media screen and (max-width: 1920px) {
     .service-item {
         flex-basis: calc(50% - 20px);
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1600px) {
+.company-info,
+.map {
+    display: block; 
+    width: 90%; 
+    margin-right: 0; 
+    }
+}
+
+@media screen and (max-width: 768px) {
     .hero-content {
         flex-direction: column;
         text-align: center;
@@ -423,7 +433,34 @@ button[type="submit"] {
     .service-item {
         flex-basis: 100%;
     }
+
+    .company-info {
+        display: block; 
+        max-width: 360px; 
+        margin: 0; 
+    }
+
+    .map {
+        width: fit-content; 
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        flex-basis: 100%; 
+        margin-right: 0; 
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        margin-left: 0;
+    }
 }
+
 
 
 /******** Dark mode *********/
