@@ -87,19 +87,21 @@ nav:not(.navbar) ul li a:active {
 
 /*Hero page*/
 
- #hero .navbar {
+#hero {
+    overflow: hidden;
+}
+
+#hero .navbar {
     display: flex;
     flex-direction: row;
     height: 100vh; 
     align-items: center;
     justify-content: center; 
-    padding: 1em; 
-    text-align: left;
 } 
 
 #hero .navbar h1 {
-    flex-basis: 30%; 
-    font-size: 50px;
+    flex-basis: 35%; 
+    font-size: 64px;
     font-weight: 900;
     letter-spacing: 15px;
     color: var(--light-secondary);
@@ -114,21 +116,19 @@ nav:not(.navbar) ul li a:active {
 }
 
 #hero .navbar ul {
-    margin: 0;
-    padding: 0;
     flex-direction: column;
     flex-basis: 35%; 
     align-items: flex-start; 
     border-left: 1px solid var(--light-secondary); 
-    padding-left: 20px; 
     list-style: none;
-
 }
 
 #hero .navbar ul li a {
+    padding-left: 50px;
+    line-height: 1.5;
     text-decoration: none;
     color: var(--light-secondary); 
-    font-size: 50px;
+    font-size: 54px;
     font-weight: 200;
 }
 
