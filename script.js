@@ -3,8 +3,8 @@ function loadEvent() {
     // Insert the navigation bar on every HTML page
     document.body.insertAdjacentHTML("afterbegin", `
         <header>
-            <nav id="navbar">
-                <h1>Acme Inc.</h1>
+            <nav class="navbar">
+                <h1><a href="./index.html"><span>Acme</span> Inc.</a></h1>
                 <ul>
                     <li><a href="./ceginformacio.html">Céginformáció</a></li>
                     <li><a href="./szolgaltatasok.html">Szolgáltatásaink</a></li>
