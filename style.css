@@ -52,7 +52,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center the gradient container horizontally */
+    justify-content: center;
     min-height: 100vh;
 }
 
@@ -60,15 +60,11 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 76%;
-    width: 100%; /* Full width of the content */
-    background: var(--light-primary); /* Apply the gradient here */
+    width: 100%; 
+    background: var(--light-primary); 
     font-family: 'Roboto', sans-serif;
 }
 
-/* header,
-section {
-    background: var(--light-primary);
-} */
 
 .subpage nav {
     display: flex;
