@@ -48,19 +48,27 @@ select {
 /***************************/
 
 body {
+    background-color: #000000; /* Keep the body background black */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the gradient container horizontally */
+    min-height: 100vh;
+}
+
+.gradient-container {
     display: flex;
     flex-direction: column;
     max-width: 76%;
-    margin: 0 auto;
-    color: var(--light-secondary);
-    background: #000000;
+    width: 100%; /* Full width of the content */
+    background: var(--light-primary); /* Apply the gradient here */
     font-family: 'Roboto', sans-serif;
 }
 
-header,
+/* header,
 section {
     background: var(--light-primary);
-}
+} */
 
 .subpage nav {
     display: flex;
