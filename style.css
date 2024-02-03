@@ -342,11 +342,53 @@ body {
     text-align: center;
 }
 
-.service-item img {
-    width: 15%;
-    height: auto;
+.icon-container {
     display: block;
     margin: 0 auto;
+    width: 100px; 
+    height: 100px;
+}
+
+.icon-container:nth-of-type(1) {
+    background: url(img/web-design-icon.svg);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-container:nth-of-type(2) {
+    background: url(img/business-management-icon.svg);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-container:nth-of-type(3) {
+    background: url(img/edit-list-icon.svg);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-container:nth-of-type(4) {
+    background: url(img/desktop-smartphone-transfer-icon.svg);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-container:nth-of-type(5) {
+    background: url(img/target-icon.svg);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-container:nth-of-type(6) {
+    background: url(img/maintenance-icon.svg);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .service-item:nth-child(1) img {
@@ -608,9 +650,54 @@ button[type="submit"] {
 /******** Dark mode *********/
 
 @media (prefers-color-scheme: dark) {
-    body {
-        color: var(--dark-secondary);
+    .gradient-container {
         background: var(--dark-primary);
     }
 
+    .subpage nav {
+        border-bottom: 1px solid var(--dark-secondary);
+    }
+
+    #hero .navbar ul {
+        border-left: 1px solid var(--dark-secondary);
+    }
+
+    #hero .navbar h1,
+    #hero .navbar ul li a,
+    .subpage nav h1,
+    .subpage nav ul li a,
+    #hero-ceginformacio,
+    .services-link,
+    #services .container,
+    .contact-info h2,
+    .company-info p,
+    .company-info ul {
+        color: var(--dark-secondary);
+    }
+
+    .text-content h1 {
+        text-shadow: none;
+    }
+
+    .reviews-section {
+        background: var(--dark-secondary);
+        color: #000000;
+    }
+
+    .review-item {
+        color: #000000;
+    }
+
+    .introduction-section {
+        background: var(--dark-primary);
+        color: var(--dark-secondary);
+    }
+
+    .contact-form {
+        background-color: var(--dark-secondary);
+    }
+
+    .form-group label {
+        color: #000000;
+    }
 }
