@@ -284,7 +284,7 @@ body {
 .introduction-section {
     background: var(--light-primary);
     color: var(--light-secondary);
-    padding: 50px 0;
+    padding: 90px 0;
     text-align: justify;
 }
 
@@ -349,66 +349,59 @@ body {
     height: 100px;
 }
 
-.icon-container:nth-of-type(1) {
+.icon-1 {
+    width: 130px;
     background: url(img/web-design-icon.svg);
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.icon-container:nth-of-type(2) {
+.icon-2 {
     background: url(img/business-management-icon.svg);
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.icon-container:nth-of-type(3) {
-    background: url(img/edit-list-icon.svg);
-    background-size: contain; 
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.icon-container:nth-of-type(4) {
+.icon-3 {
     background: url(img/desktop-smartphone-transfer-icon.svg);
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.icon-container:nth-of-type(5) {
+.icon-4 {
+    background: url(img/edit-list-icon.svg);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-5 {
     background: url(img/target-icon.svg);
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.icon-container:nth-of-type(6) {
+.icon-6 {
     background: url(img/maintenance-icon.svg);
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.service-item:nth-child(1) img {
-    width: 30%;
-}
-
-.service-item:nth-child(3) img {
-    width: 22%;
-}
-
 .service-item h3 {
     width: 90%;
     margin: 20px 30px;
-    font-size: 1.5em;
+    font-size: 24px;
     font-weight: 700
 }
 
 .service-item p {
     text-align: left;
-    font-size: 1.5em;
+    font-size: 24px;
 }
 
 
@@ -692,6 +685,10 @@ button[type="submit"] {
         background: var(--dark-primary);
         color: var(--dark-secondary);
     }
+
+    .icon-container {
+        filter: invert(100%); /* SVG color from black to white */
+      }
 
     .contact-form {
         background-color: var(--dark-secondary);
