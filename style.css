@@ -459,6 +459,7 @@ body {
 
 .map {
     width: 35%;
+    height: 722px;
     margin-left: 50px;
     box-sizing: border-box;
 }
