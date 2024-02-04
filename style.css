@@ -89,7 +89,8 @@ body {
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .subpage nav ul li:first-child {
@@ -649,7 +650,7 @@ button[type="submit"] {
 
      #hero-ceginformacio {
         position: relative;
-        height: 20vh;
+        height: 33.33vh;
     } 
 
     .hero-items {
@@ -668,7 +669,7 @@ button[type="submit"] {
     }
 
     .text-content {
-        top: 30%; 
+        top: 10%; 
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
