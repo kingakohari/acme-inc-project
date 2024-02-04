@@ -558,7 +558,9 @@ button[type="submit"] {
 
     #footer-btm {
         position: fixed;
+        left: 0;
         bottom: 0;
+        height: 200px;
     }
 
     #footer-btm h2 {
@@ -566,6 +568,10 @@ button[type="submit"] {
         font-weight: 700;
         letter-spacing: 50px;
         z-index: 100;
+    }
+
+    main {
+        padding-bottom: 200px; 
     }
 }
 
@@ -778,10 +784,6 @@ button[type="submit"] {
         border-bottom: 1px solid var(--dark-secondary);
     }
 
-    #hero .navbar ul {
-        border-left: 1px solid var(--dark-secondary);
-    }
-
     #hero .navbar h1,
     #hero .navbar ul li a,
     .subpage nav h1,
@@ -824,5 +826,19 @@ button[type="submit"] {
 
     .form-group label {
         color: #000000;
+    }
+}
+
+@media (prefers-color-scheme: dark) and (max-width: 768px) {
+
+    #hero .navbar ul {
+        border-top: 1px solid var(--dark-secondary);
+    }
+}
+
+@media (prefers-color-scheme: dark) and (min-width: 769px) {
+
+    #hero .navbar ul {
+        border-left: 1px solid var(--dark-secondary);
     }
 }
