@@ -8,7 +8,7 @@ function loadEvent() {
       `
         <header>
             <nav class="navbar">
-                <h1><a href="./index.html"><span>Acme</span> Inc.</a></h1>
+                <h1><a href="./index.html"><span>Acme</span> <span class="hide-on-mobile">Inc.</span></a></h1>
                 <ul>
                     <li><a href="./ceginformacio.html">Céginformáció</a></li>
                     <li><a href="./szolgaltatasok.html">Szolgáltatásaink</a></li>
