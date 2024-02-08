@@ -574,7 +574,6 @@ button[type="submit"] {
     font-size: 120px;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 200px;
     color: var(--dark-secondary);
 }
 
@@ -769,10 +768,11 @@ button[type="submit"] {
         width: 100%;
     }
 
-/*     .review-items {
+   .review-items {
         grid-template-columns: 1fr;
     }
 
+/*  
     .service-item {
         flex-basis: 100%;
     } */
