@@ -22,6 +22,5 @@ async function initMap() {
   });
 }
 
-if (mapElement) {
-  initMap();
-}
+initMap();
+

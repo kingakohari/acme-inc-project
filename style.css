@@ -332,6 +332,23 @@ body {
 }
 
 .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    column-gap: 50px;
+    align-items: center;
+    justify-items: center;
+}
+
+.service-item {
+    display: grid;
+    grid-template-rows: 1fr 3fr; /* Create two rows: one for the icon, one for the content */
+    gap: 0;
+    align-items: center; 
+    justify-items: center;
+    text-align: center;
+}
+
+/* .services-grid {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -342,17 +359,16 @@ body {
     flex-basis: calc(50% - 20px);
     margin-bottom: 40px;
     text-align: center;
-}
+} */
 
 .icon-container {
-    display: block;
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
+    margin: 0;
+    width: 55px;
+    height: 65px;
 }
 
 .icon-1 {
-    width: 130px;
+    width: 90px;
     background: url(img/web-design-icon.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -394,14 +410,22 @@ body {
     background-position: center;
 }
 
+.service-item-content {
+    display: grid;
+    grid-template-rows: auto; 
+    align-items: center;
+    justify-items: center;
+}
+
 .service-item h3 {
     width: 90%;
-    margin: 20px 30px;
+    margin: 20px 0 30px;
     font-size: 24px;
-    font-weight: 700
+    font-weight: 700;
 }
 
 .service-item p {
+    margin-bottom: 20px;
     text-align: left;
     font-size: 24px;
 }
@@ -745,13 +769,13 @@ button[type="submit"] {
         width: 100%;
     }
 
-    .review-items {
+/*     .review-items {
         grid-template-columns: 1fr;
     }
 
     .service-item {
         flex-basis: 100%;
-    }
+    } */
 
     .company-info {
         display: block;
