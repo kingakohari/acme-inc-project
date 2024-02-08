@@ -60,7 +60,7 @@ body {
 .gradient-container {
     display: flex;
     flex-direction: column;
-    max-width: 76%;
+    max-width: 1440px;
     width: 100%;
     background: var(--light-primary);
     font-family: 'Roboto', sans-serif;
@@ -179,7 +179,7 @@ body {
 }
 
 #hero-ceginformacio {
-    height: 66.66vh;
+    height: 66.67vh;
     color: var(--light-secondary);
 }
 
@@ -586,6 +586,12 @@ button[type="submit"] {
     }
 }
 
+@media screen and (min-width: 2150px) {
+    .gradient-container {
+        max-width: 100%;
+    }
+}
+
 @media screen and (min-width: 1920px) {
     .service-item {
         flex-basis: calc(30%);
@@ -789,7 +795,7 @@ button[type="submit"] {
     #hero .navbar h1,
     #hero .navbar ul li a,
     .subpage nav h1,
-    .subpage nav ul li a,
+    .subpage nav ul li a.active,
     #hero-ceginformacio,
     .services-link,
     #services .container,
@@ -797,6 +803,10 @@ button[type="submit"] {
     .company-info p,
     .company-info ul {
         color: var(--dark-secondary);
+    }
+
+    .subpage nav ul li a {
+        color: rgba(255, 255, 255, 0.75);
     }
 
     .text-content h1 {
