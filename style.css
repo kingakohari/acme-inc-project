@@ -863,18 +863,18 @@ button[type="submit"] {
     .form-group label {
         color: #000000;
     }
-}
 
-@media (prefers-color-scheme: dark) and (max-width: 768px) {
+    @media (max-width: 767px) {
 
-    #hero .navbar ul {
-        border-top: 1px solid var(--dark-secondary);
+        #hero .navbar ul {
+            border-top: 1px solid var(--dark-secondary);
+        }
     }
-}
 
-@media (prefers-color-scheme: dark) and (min-width: 769px) {
+    @media (min-width: 768px) {
 
-    #hero .navbar ul {
-        border-left: 1px solid var(--dark-secondary);
+        #hero .navbar ul {
+            border-left: 1px solid var(--dark-secondary);
+        }
     }
 }
