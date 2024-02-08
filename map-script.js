@@ -1,3 +1,4 @@
+function loadEvent() {
 //Google Maps API call
 
 const mapElement = document.getElementById("map");
@@ -23,4 +24,6 @@ async function initMap() {
 }
 
 initMap();
+}
 
+window.addEventListener("load", loadEvent);
