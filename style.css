@@ -541,10 +541,14 @@ body {
     flex-basis: 1;
 }
 
+.contact-form #submit {
+    display: flex;
+    justify-content: flex-end; 
+} 
+
 button[type="submit"] {
     width: 140px;
-    height: 38px;
-    margin-left: 89%;
+    height: 38px;  
     margin-top: 30px;
     padding: 2px 28px;
     border: none;
@@ -784,7 +788,6 @@ button[type="submit"] {
     }
 
     .map {
-        width: fit-content;
         margin: 10px auto;
         padding: 0;
     }
