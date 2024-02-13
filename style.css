@@ -66,7 +66,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
 .subpage nav {
     display: flex;
     align-items: center;
@@ -723,7 +722,6 @@ button[type="submit"] {
     .services-link {
         display: none;
     }
-
 }
 
 @media screen and (max-width: 768px) {
