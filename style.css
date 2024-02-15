@@ -464,6 +464,10 @@ body {
     font-size: 24px;
 }
 
+.company-info #products {
+    margin-bottom: 0;
+}
+
 .company-info ul li {
     margin-left: 12px;
     list-style: none;
@@ -640,13 +644,6 @@ button[type="submit"] {
         margin: 10px;
         padding: 0 15px;
     }
-
-    .company-info,
-    .map {
-        display: block;
-        width: 90%;
-        margin-right: 0;
-    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -721,6 +718,13 @@ button[type="submit"] {
 
     .services-link {
         display: none;
+    }
+
+    .company-info,
+    .map {
+        display: block;
+        width: 90%;
+        margin-right: 0;
     }
 }
 

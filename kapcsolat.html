@@ -2,6 +2,21 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZSVW38JGE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-MZSVW38JGE');
+  </script>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsPTzK5VxAoX-_bqd-c3WEV2rvRKk8BY4&callback=console.debug&libraries=maps,marker&v=beta">
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="script.js" defer></script>
@@ -12,25 +27,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MZSVW38JGE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-  gtag('config', 'G-MZSVW38JGE');
-</script>
-<script async
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsPTzK5VxAoX-_bqd-c3WEV2rvRKk8BY4&callback=console.debug&libraries=maps,marker&v=beta">
-</script>
 
 <body id="contact" class="subpage">
   <div class="gradient-container">
     <main>
-      <section id="contact">
+      <section id="contact-section">
         <section class="contact-info">
           <h2><em>Kapcsolat</em></h2>
           <div class="company-info">
@@ -43,13 +44,14 @@
                 nyújtsuk, amelyek
                 segítik ügyfeleinket a hatékonyság növelésében és a versenyelőny megszerzésében.</em></p>
 
-            <ul><em><b>Termékek és szolgáltatások:</b>
-                <li>Szoftverfejlesztés és testreszabás</li>
-                <li>Adatkezelés és elemzés</li>
-                <li>Cloud alapú megoldások</li>
-                <li>Biztonsági rendszerek és tanácsadás</li>
-                <li>Ügyfélkapcsolat-kezelés (CRM) rendszerek</li>
-              </em></ul>
+            <p id="products"><em><b>Termékek és szolgáltatások:</b></em></p>
+            <ul>
+              <li><em>Szoftverfejlesztés és testreszabás</em></li>
+              <li><em>Adatkezelés és elemzés</em></li>
+              <li><em>Cloud alapú megoldások</em></li>
+              <li><em>Biztonsági rendszerek és tanácsadás</em></li>
+              <li><em>Ügyfélkapcsolat-kezelés (CRM) rendszerek</em></li>
+            </ul>
 
             <p><em><b>Ügyfélközpontúság:</b> Az ACME Inc. kiemelkedően fontosnak tartja ügyfelei elégedettségét és
                 elégedettségüket.
