@@ -284,7 +284,7 @@ body {
 .introduction-section {
     background: var(--light-primary);
     color: var(--light-secondary);
-    padding: 90px 0;
+    padding: 80px 0;
     text-align: justify;
 }
 
@@ -295,8 +295,7 @@ body {
 }
 
 .introduction-section h2 {
-    padding-top: 45px;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
     font-size: 40px;
     font-weight: 400;
     text-align: center;
