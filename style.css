@@ -231,9 +231,8 @@ body {
 }
 
 .reviews-section .container {
-    width: 95%;
-    margin: 15px;
-    padding-left: 70px;
+    align-items: center;
+    margin: 80px;
 }
 
 .reviews-section h2 {
@@ -265,7 +264,7 @@ body {
     width: 155px;
     height: 165px;
     object-fit: cover;
-    margin: 0 auto 20px;
+    margin: 0 auto 40px;
 }
 
 .review-content {
@@ -638,12 +637,6 @@ button[type="submit"] {
         max-width: 100%;
         width: 100%;
     }
-
-    .reviews-section .container {
-        max-width: 1200px;
-        margin: 10px;
-        padding: 0 15px;
-    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -720,6 +713,14 @@ button[type="submit"] {
         display: none;
     }
 
+    .reviews-section .container {
+        margin: 0 25px;
+    }
+
+    .intro-container {
+        margin: 0 25px;
+    }
+
     .company-info,
     .map {
         display: block;
@@ -777,7 +778,6 @@ button[type="submit"] {
    .review-items {
         grid-template-columns: 1fr;
     }
-
 /*  
     .service-item {
         flex-basis: 100%;
