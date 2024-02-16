@@ -332,6 +332,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     column-gap: 50px;
+    margin-bottom: 80px;
     align-items: center;
     justify-items: center;
 }
@@ -578,8 +579,10 @@ button[type="submit"] {
 #footer-btm h2 {
     font-size: 120px;
     font-weight: 400;
+    letter-spacing: 200px;
     text-transform: uppercase;
     color: var(--dark-secondary);
+    margin-right: -150px; 
 }
 
 /******** Responsive design *********/
@@ -594,6 +597,7 @@ button[type="submit"] {
     }
 
     #footer-btm h2 {
+        margin-right: -30px;
         font-size: 40px;
         font-weight: 700;
         letter-spacing: 50px;
@@ -605,8 +609,9 @@ button[type="submit"] {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1600px) {
     #footer-btm h2 {
+        margin-right: 0;
         font-size: 6vw;
         font-weight: 400;
         letter-spacing: calc(50px + (200 - 50) * ((100vw - 768px) / (1920 - 768)));
@@ -623,18 +628,6 @@ button[type="submit"] {
 @media screen and (min-width: 1920px) {
     .service-item {
         flex-basis: calc(30%);
-    }
-}
-
-@media screen and (max-width: 1600px) {
-
-    body {
-        height: auto;
-    }
-
-    .gradient-container {
-        max-width: 100%;
-        width: 100%;
     }
 }
 
@@ -716,10 +709,7 @@ button[type="submit"] {
         margin: 0 25px;
     }
 
-    .intro-container {
-        padding: 0 25px;
-    }
-
+    .intro-container,
     #services .container {
         padding: 0 25px;
     }
