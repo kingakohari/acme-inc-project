@@ -717,7 +717,11 @@ button[type="submit"] {
     }
 
     .intro-container {
-        margin: 0 25px;
+        padding: 0 25px;
+    }
+
+    #services .container {
+        padding: 0 25px;
     }
 
     .company-info,
@@ -784,7 +788,6 @@ button[type="submit"] {
 
     .company-info {
         display: block;
-        max-width: 360px;
         margin: 0;
     }
 
